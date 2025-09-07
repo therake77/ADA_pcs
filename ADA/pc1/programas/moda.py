@@ -23,7 +23,3 @@ def Moda(A:list):
     fmax = max(freq_list.values())
     result = [k for k in freq_list.keys() if freq_list[k] == fmax]
     return result
-
-lista = ['A','C','A','A','C','A','A','A','C','C','B','C','C','B','B']
-
-print(Moda(lista))

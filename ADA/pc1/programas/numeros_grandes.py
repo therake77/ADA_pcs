@@ -21,5 +21,3 @@ def mul(A:str,B:str)->str:
     return mylib.removeZeros(mylib.positiveSum(mylib.positiveSum(mylib.shl(p1,2*m),mylib.shl(p3,m)),p2))
 
 
-print(mul("98765465","32121"))
-

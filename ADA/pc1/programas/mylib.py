@@ -59,13 +59,3 @@ def positiveSub(num1:str,num2:str)->str:
         result=str(sub) + result
 
     return result
-'''
-def sum(num1:str,num2:str)->str:
-    if(num1[0]!="-" and num2[0]!="-"):
-        return positiveSum(num1[1:],num2[1:])
-    elif(num1[0]!="-"):
-        return sub(num1,num2[1:])
-    elif(num2[0]!="-"):
-        return sub(num2[1:],num1)
-    else:
-        return "-"+positiveSum(num1[1:],num2[1:]) '''
