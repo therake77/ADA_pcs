@@ -1,0 +1,26 @@
+\frametitle{Subsecuencia de suma máxima(Pseudocódigo)}
+        \begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+Procedimiento MaxSubsecuenciaCruzada(arr, izquierda, medio, derecha):
+    suma <- 0
+    mazIzq <- -inf
+    indiceIzq <- medio
+    Para i Desde medio Hasta izquierda Paso -1
+        suma <- suma + arr[i]
+        Si suma > maxIzq
+            maxIzq <- suma
+            indiceIzq <- i
+        FinSi
+    FinPara
+    suma <- 0
+    maxDer <- -inf
+    indiceDer <- medio + 1
+    Para j Desde medio+1 Hasta derecha
+        suma <- suma + arr[j]
+        Si suma > maxDer
+            maxDer <- suma
+            indiceDer <- i
+        FinSi
+    FinPara
+    Devolver maxIzq + maxDer
+FinProcedimiento
+        \end{lstlisting}
