@@ -1,4 +1,0 @@
-\beamer@sectionintoc {1}{Longest palindrome Sequence}{3}{0}{1}
-\beamer@sectionintoc {2}{Ordenación de multiplicación de matrices}{6}{0}{2}
-\beamer@sectionintoc {3}{Optimal Binary Search Tree}{9}{0}{3}
-\beamer@sectionintoc {4}{Alternating Coin Game}{13}{0}{4}
