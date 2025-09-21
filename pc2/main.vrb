@@ -1,0 +1,39 @@
+\frametitle{Alternating Coin Game: Pseudocódigo}
+        \begin{columns}
+            \begin{column}{0.6\textwidth}
+                \begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+Procedimiento maxGameResult(C)
+    n <- C.length
+    dp <- Matriz[n+1][n+1]
+    construir(dp)
+    Para d Desde 2 Hasta n Hacer
+        j = d+i
+        Para i Desde 0 Hasta n-d Hacer
+            s_1 = C[i] +
+            min(dp[i+2][j],dp[i+1][j-1])
+            s_2 = C[j-1] +
+            min(dp[i][j-2],dp[i+1][j-1])
+            dp[i][j] = max(s_1,s_2)
+        FinPara
+        Retornar dp[0][n]
+    FinPara
+FinProcedimiento
+                \end{lstlisting}
+            \end{column}
+            \begin{column}{0.5\textwidth}
+                \begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+Procedimiento construir_dp(dp)
+    n <- K.length
+    Para i Desde 0 Hasta n
+        Para j Desde 0 Hasta i
+            dp[i][j] = 0
+        FinPara
+        Si i < n Entonces
+            dp[i][i+1] = V[i]
+        FinSi
+    FinPara
+    Retornar dp
+FinProcedimiento
+                \end{lstlisting}
+            \end{column}
+        \end{columns}
